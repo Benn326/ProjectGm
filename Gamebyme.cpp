@@ -29,7 +29,7 @@ void display(string word, const vector<bool> &guessed)
             cout << "_";
         }
     }
-    cout<<endl;
+    cout << endl;
 }
 int main()
 {
@@ -62,7 +62,6 @@ int main()
                 attemp--;
                 cout << "Incorrect guess. Attempts remaining: " << attemp << endl;
             }
-           
         }
         if (isWordRight(guessed))
         {
@@ -72,10 +71,10 @@ int main()
         {
             cout << "Game Over! The word was: " << word << endl;
         }
-        cout<<"Do you want to play again? (y/n): ";
+        cout << "Do you want to play again? (y/n): ";
         char option;
-        cin>>option;
-        if(option=='y'||option=='Y')
+        cin >> option;
+        if (option == 'y' || option == 'Y')
         {
             continue;
         }
